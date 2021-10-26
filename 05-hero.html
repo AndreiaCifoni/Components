@@ -25,18 +25,41 @@
       .container {
         margin: 0 auto;
         width: 1200px;
-        background-color: red;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
       }
       nav {
         font-size: 20px;
         font-weight: 700;
         display: flex;
         justify-content: space-between;
-        background-color: green;
+        padding-top: 32px;
+      }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        /* in relation to PARENT size */
+        left: 50%;
+        top: 50%;
+        /* in relation to the ELEMENT size  */
+        transform: translate(-50%, -50%);
+      }
+      .header-container-inner {
+        width: 50%;
       }
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
       p {
         font-size: 20px;
@@ -70,14 +93,17 @@
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
-      <div class="container">
-        <h1>Ahealty meal delivered to your door, every day</h1>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>Ahealty meal delivered to your door, every day</h1>
+          <p>
+            The smart 365-day-per-year food subscription that will make you eat
+            healty again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
-      <p>
-        The smart 365-day-per-year food subscription that will make you eat
-        healty again. Tailored to your personal tastes and nutritional needs.
-      </p>
-      <a href="#" class="btn">Start eating well</a>
     </header>
 
     <section>
