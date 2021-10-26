@@ -14,16 +14,39 @@
       }
       body {
         font-family: sans-serif;
+        color: #343a40;
+        font-size: 24px;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
       }
-      .nav {
+      nav,
+      menu,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
       }
-      .menu {
+      nav {
+        background-color: #343a40;
+        color: #fff;
+        grid-row: 1 / -1;
       }
-      .section {
+      menu {
+        background-color: #7048e8;
+        color: #fff;
+        grid-column: 2 / -1;
       }
-      .main {
+      section {
+        background-color: #e9ecef;
       }
-      .aside {
+      main {
+      }
+      aside {
+        background-color: #e9ecef;
       }
     </style>
   </head>
@@ -31,7 +54,7 @@
     <nav>Nav</nav>
     <menu>Menu</menu>
     <section>Inbox</section>
-    <main>Email</main>
-    <aside>Notes</aside>
+    <main>Email view</main>
+    <aside>Additional Info</aside>
   </body>
 </html>
